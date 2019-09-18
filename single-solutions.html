@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>KM Garage :: Single Solutions</title>
+<!-- Slick Slider Css Include Here -->
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+<!-- Bootstrap Css Include Here -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+<!-- Theme Main Stylesheet Include Here -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<main class="site_wrapper">
+	<header class="st_header">
+		<nav class="navbar navbar-expand-lg navbar-light st_navbar">
+			<div class="container">
+				<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Logo"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="mainMenu">
+					<ul class="navbar-nav ml-auto">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li class="current-menu-item"><a href="#">Solutions</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header><!--/.st_header-->
+	<article class="st_content">
+		<section class="top-banner">
+			<img src="images/about-us-banner.jpg" alt="Banner">
+			<div class="overlay">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+							<div class="inner-sec">
+								<h1 class="page-title">Title Here</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--/.top-banner-->
+		<section class="single-solution-sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-8 col-sm-12 col-12">
+						<div class="content-sec">
+							<h5>Lorem Ipsum</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-8 col-sm-12 col-12">
+						<div class="img-sec">
+							<img src="images/gallery-one.jpg" alt="Image">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--/.solution-sec-->
+	</article><!--/.st_content-->
+	<footer class="st_footer">
+		<div class="top-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-12">					
+						<div class="inner-wrapper">
+							<a href="#" class="foot-brand"><img src="images/logo.png" alt="Logo"></a>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#">About Us</a></li>
+								<li class="current-menu-item"><a href="#">Solutions</a></li>
+								<li><a href="#">Gallery</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+							<a href="#" class="foot-brand"><img src="images/KM-Group.png" alt="KM-Group"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+						<div class="inner-sec">
+							<p>Copyright &copy; 2019 All rights Reserved</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div>
+	</footer><!--/.st_footer-->
+</main>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- Slick Slider JavaScript Include Here -->
+<script type="text/javascript" src="js/slick.min.js"></script>
+<!-- Custom JavaScript Include Here -->
+<script type="text/javascript">
+	// Sticky Header
+	$(window).scroll(function() {    
+		var scroll = $(window).scrollTop();
+		if (scroll >= 1) {
+			$(".st_header").addClass("dark_header");
+		} else {
+			$(".st_header").removeClass("dark_header");
+		}
+	});
+	$(document).ready(function(){
+		// Hero Banner Window Height
+		$('#heroSlider .carousel-item') .css({'height': ($(window).height()) + 'px'});
+		// Slick Slider Solution Ini Here
+		$('.solution-sec .slick-container').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 2000,
+		});
+		// Slick Slider Our Partner Ini Here
+		$('.our-partner-sec .slick-container').slick({
+			//dots: true,
+			slidesToShow: 6,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 2000,
+		});
+	});
+</script>
+</body>
+</html>
